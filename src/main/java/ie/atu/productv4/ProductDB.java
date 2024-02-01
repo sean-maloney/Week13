@@ -1,4 +1,4 @@
-package ie.atu.productv3;
+package ie.atu.productv4;
 
 
 public class ProductDB {
@@ -56,13 +56,41 @@ public class ProductDB {
             myProduct = myBook;
         }
 
+
+
+        if (productCode.equalsIgnoreCase("gold")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Gold Digger");
+            myMusic.setPrice(8.50);
+            myMusic.setArtist("Kayne West");
+            myMusic.setLabel("MTV");
+            myProduct = myMusic;
+        } else if (productCode.equalsIgnoreCase("ring")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Ring of Fire");
+            myMusic.setPrice(6.50);
+            myMusic.setArtist("Johhny Cash");
+            myMusic.setLabel("MTV");
+            myProduct = myMusic;
+        } else if (productCode.equalsIgnoreCase("toot")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("tootsie slide");
+            myMusic.setPrice(7.50);
+            myMusic.setArtist("Drake");
+            myMusic.setLabel("MTV");
+            myProduct = myMusic;
+        }
+
         return myProduct;
 
-    //  public static Book or Software getProduct(String productCode) {
-    // In a more realistic application, this code would get the data for the product from a file or database
-    // For now, this code just uses if/else statements to return the correct product data
+        //  public static Book or Software getProduct(String productCode) {
+        // In a more realistic application, this code would get the data for the product from a file or database
+        // For now, this code just uses if/else statements to return the correct product data
 
-    //We need all the book and software objects, but what kind of object do we return?
+        //We need all the book and software objects, but what kind of object do we return?
     }
 }
 
